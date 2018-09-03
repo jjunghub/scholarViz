@@ -1,0 +1,85 @@
+.node {
+    cursor: pointer;
+  }
+  
+  .node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+  
+  .node--leaf {
+    fill: white;
+  }
+
+  .node--hide {
+      display: none;
+      pointer-events: none;
+  }
+  
+  .label {
+    pointer-events: none;
+    /* display: none; */
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  }
+
+  div.packSection {
+      width: 80%;
+      display : inline-flex;
+      align-items: center;
+  }
+  div.control-wrapper{
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex : 1;
+    margin: 20px;
+    text-align: left;
+    /* width:40%; */
+  }
+  div.slider-wrapper{
+      text-align: left;
+      margin-top: 25px;
+      /* max-width: 500px; */
+      display: flex;
+      align-items: center;
+  }
+  div.controlPanel{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 1.5rem;
+    border: 1px solid black;
+    margin:1rem;
+  }
+  div.slidertitle{
+      flex:1
+  }
+  div.slidere{
+      flex:1
+  }
+
+  #circlePack{
+      /* width:600px; */
+      /* height: 600px; */
+      /* flex:1; */
+      min-width: 300px;
+  }
+
+  .tooltip{
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    pointer-events: none;
+    border: 1px solid black;
+    width:350px;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    padding: 0.5rem;
+    text-align: left;
+    display: inline-block;
+  }
+  .emptychild{
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    fill: black;
+    visibility: hidden;
+  }

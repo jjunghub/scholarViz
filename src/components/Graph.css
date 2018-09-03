@@ -1,0 +1,23 @@
+.Graph-svg {
+    border: 1px solid black;
+  }
+
+g.nodes circle {
+    stroke: white;
+    stroke-width: 1.5;
+    fill: blueviolet;
+    fill-opacity: 1;
+}
+g.nodes circle:hover {
+    cursor: pointer;
+    stroke: #3bc9db;
+    stroke-width: 1.5;
+    fill: #3bc9db;
+    fill-opacity: 1;
+}
+g.links line {
+    stroke: rgb(209, 208, 208);
+}
+form {
+    text-align: left;
+}

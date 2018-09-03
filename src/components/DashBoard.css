@@ -1,0 +1,187 @@
+svg {
+    width:500px;
+    margin: 1rem;
+}
+.sessionTitle{
+    display: inline-flex;
+    align-items: center;
+}
+.packtitle{
+    display: inline-flex;
+    align-items: center;
+}
+#circlePack {
+    width:500px;
+    height:500px;
+}
+path {
+    fill: none;
+    stroke-width: 1.0px;
+    stroke: #3bc9db;
+}
+circle {
+    fill: #3bc9db;
+    stroke-width: 2px;
+    stroke: white;
+}
+circle[hovered = true] {
+    cursor: pointer;
+    fill:  #3bc9db;
+    stroke-width: 2px;
+    stroke:  #3bc9db;
+}
+circle[selected = true] {
+    fill: red;
+}
+.axis line, .axis path{
+    stroke: gray;
+}
+
+div.table {
+    display: inline-block;
+    width: 30%;
+    background: white;
+    margin: 1rem;
+}
+
+#spreadsheet2{
+    width: 30%;
+}
+#tagTable{
+    width: 25%;
+}
+table{
+    width:100%;
+    /* table-layout: fixed; */
+}
+.tinfo{
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+}
+  .thead{
+    /* background: #3bc8db57; */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    overflow:scroll;
+
+   }
+   .thead th{
+    cursor: s-resize;
+   }
+  .tbody{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+
+  }
+  th{
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    border: white;
+  }
+  td{
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+    border-bottom: solid 1px black;
+  }
+  div.container{
+    max-height: 80px;
+    overflow:-webkit-paged-x;
+    /* overflow:scroll; */
+    vertical-align:middle;
+    /* line-height: 80px; */
+  }
+  div.container title{
+    display: block;
+    margin-bottom: 4px;
+    line-height: 1rem;
+  }
+
+  div.tag{
+      background : powderblue;
+      line-height:20px;
+      float:left;
+      padding: 0 5px;
+      margin: 2px;
+      border-radius: 2px;
+      height:auto;
+  }
+  div.tag:hover{
+    cursor: pointer;
+}
+.sessiontag{
+    background : lightslategrey;
+    color: white;
+    line-height:30px;
+    float:left;
+    padding: 0 10px;
+    margin: 2px;
+    border-radius: 2px;
+    height:auto;
+}
+.sessiontag:hover{
+  cursor: pointer;
+}
+
+.node {
+    cursor: pointer;
+  }
+  
+  .node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+  
+  .node--leaf {
+    fill: white;
+  }
+  .axis-label {
+    pointer-events: none;
+    fill:black;
+    font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* display: none; */
+  }
+  .label {
+    pointer-events: none;
+    /* display: none; */
+    font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  }
+
+  div.packSection {
+      width: 80%;
+      display : inline-flex;
+      align-items: flex-start;
+  }
+  div.pack-control{
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex : 1;
+    margin: 20px;
+  }
+  div.slider{
+      text-align: left;
+      margin: 20px;
+  }
+
+  
+  /* .label,
+  .node--root,
+  .node--leaf {
+    pointer-events: none;
+  } */
